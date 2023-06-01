@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AIS Data Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Andrew Del Real</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/andrew-del-real/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/ADelReal/Portfolio-Projects" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>AIS Data Analysis</h1>
+									<p>The Association for Information System is a Profesional business club at UC-Riverside that helps to promote
+										the field of Information System by holding various meetings, work shops, and Guest Spearker panels for students.
+										In this Project, I help to collect, clean, and Analysis on our members to gain insight on the demigraphic we serve
+										and to better market our organization.
+									</p>
+								</header>
+								<div class="image main"><img src="images/front_logo_1.png" alt="" /></div>
+
+								<p>During my time at UC-Riverside, I was the Head of Market Research for AIS. I wanted to take a more analytical role 
+									and collect data to better understand our members. the first step of the process was to create and deploy a Survey
+									to all students who are interested in joining our club.
+								</p>
+								<a href="https://forms.gle/hhmna355szqswa4X7" class="image main"><img src="images/AIS_Survey.jpg" alt="" /></a>
+								<a href="https://forms.gle/hhmna355szqswa4X7" class="button">Link to Survey</a>
+								<p>
+									<br>Over the course of two academic quarters(roughly 6 months). It is important to note that in our actual data set, 
+									we collected other information such as our members full name, email addresses, and student ID. But for the purposes 
+									for this project, I had chosen to take that information out.
+								</p>
+								<a><img src="images/collected_data.jpg" class="image fit" alt="" /></a>
+								<p>
+									In order to perform an analysis on our data, we first need to prep the dataset for visualization: <br>
+									We shorten the timestamp to only contained the date and we also added an "Academic Weeks" column 
+									to help us visualize a line chart later. We also cleaned up any misspellings in the "Major" column.
+									The survey also allows our members to write a free respone for some of the questions. Based on there response,
+									we lumped them together in order to preserve the data during our visualization.
+								</p>
+								<a><img src="images/data_cleaning_01.jpg" class="image fit" alt=""></a>
+								<p>
+									In the example below, we can see that students have input "Econ" and "Economics" as there meajor. While both are correct,
+									we need to make sure thay fit the same format. along with this imput error, "Marketing" is also spelled incorrectly. 
+								</p>
+								<a><img src="images/data_cleaning_02.jpg" alt=""></a>
+								<a><img src="images/data_cleaning_03.jpg" alt=""></a>
+								<p>
+									Once the data has been cleaned, it is time to conduct data exploration with the use of pivot tables and pivot charts.
+								</p>
+								<a><img src="images/Pivot_Chart_01.jpg" class="image fit" alt=""></a>
+								<a><img src="images/Pivot_Chart_02.jpg" class="image fit" alt=""></a>
+								<p>
+									After we were done exploring the data, we compiled our most interesting graphs into a dashboard. we also included a few slicers
+									in order to filter some of the data based upon there grade level, academic quarter, and there housing status.
+								</p>
+								<a class="image fit" href="files/AIS Membership Analysis(2022-2023).xlsx" download="AIS dashboard"><img src="images/Excel_Dashboard.jpg" alt=""></a>
+								<a href="files/AIS Membership Analysis(2022-2023).xlsx" class="button icon solid fa-download">Download Dashboard</a>
+							</section>
+
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p>Murrieta, CA</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(951) 551-0135</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">adelreal909@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
